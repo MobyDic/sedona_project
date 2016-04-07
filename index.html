@@ -1,35 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Test</title>
-    <style type="text/css">
-    .class1 {
-        width: 100px;
-        height: 100px;
-        border: 1px solid red;
-        background: url(111.svg) no-repeat 50% 50%;
-    }
-        </style>
-    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <meta charset="utf-8">
+	<title>Sedona</title>
+	<link rel="stylesheet" type="text/css" href="css/main_style.css">
 </head>
 <body>
-<div class="class1"></div>
+<div class="wrapper">
+  <header class="main_header">
+    <nav class="main_navigation">
+      <ul>
+        <li>
+          <a href="#">ИНФОРМАЦИЯ</a>
+        </li>
+        <li>
+          <a href="#">ФОТО И ВИДЕО</a>
+        </li>
+        <li>
+          <a href="#">ГОСТИННИЦЫ</a>
+        </li>
+        <li>
+          <a href="#">КАРТА САЙТА</a>
+        </li>
+      </ul>
+      <a class ="header_logo" href="#"><img src="img/header_logo.png" alt="header_log" width="140" height="70"></a>
+    </nav>
+  </header>
 
-   <!--  <div class="second">
-        <p class="first-class">Первый абзац</p>
-        <p  class="second"><span  class="second-class">Второй абзац</span></p>
-        <p class="p">Третий абзац</p>
+  <main class="containter">
+
+  <div class="logo"></div>
+
+  <p class="litle_town">СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</p>
+  <p class="prich">РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</p>
+
+  <div class="place clearfix">
+  <div class="place_item left">	
+    <p class="place_head">НАСТОЯЩИЙ ГОРОДОК</p>
+  	<span class="place_number">- №1 -</span><p class="place_content">CЕДОНА - НЕ АТРАКЦИОН ДЛЯ ТУРИСТОВ ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
+  	</p>
+  </div>
+    <img class="right" src="img/sedona_sity.jpg" alt="Фото Седоны" width="" height="">
+    <div class="clearfix"></div> 
+  </div>
+  
+  
+  <section class="servise clearfix">
+  	<div class="servise_item left">
+      <img src="img/house.svg" alt="servise_foto">
+      <b class="servise_name">ЖИЛЬЕ</b>
+      <p>РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЕ КАК В КИНО!</p>
     </div>
-        <ul>
-            <li class="first-class"><a href="">какой-то текст</a></li>
-            <li class="second-class s1"><a href="">какой</a>
-            </li>
-            <li class="third-class"><a href="">-то</a></li>
-            <li class="fouth-class">
-            <a href=""></a></li>
-        </ul>
+    <div class="servise_item left">
+      <img src="img/food.svg" alt="servise_foto">
+      <b class="servise_name">ЕДА</b>
+      <p>ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР,<br>ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
+    </div>
+    <div class="servise_item right">
+      <img src="img/toy.crv" alt="servise_foto">
+      <b class="servise_name">СУВЕНИРЫ</b>
+      <p>НЕ ТОЛЬКО КИТАЙСКОГО,<br>НО И МЕСТНОГО ПРОИЗВОДСТВА!</p>
+    </div>
+  </section>
 
-    <script type="text/javascript" src="main.js"></script> -->
+  <div class="place clearfix">
+    <img class="left" src="img/bridge.jpg" alt="Фото моста Седоны" width="" height="">
+    <div class="place_item right">
+      <p class="place_head">ТАМ ЕСТЬ<br>МОСТ ДЬЯВОЛА</p>
+      <span class="place_number">- №2 -</span><p class="place_content">ДА, НО ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО ВЫ ОСМЕЛИТЕСЬ</p>
+    </div>
+    <div class="clearfix"></div>    
+  </div>
+  
+
+ <div class="place_other clearfix">
+ 	<div class="place_other_item left">
+    <p class="place_head">НЕБОЛЬШАЯ ПЛОЩАДЬ</p>
+    <span class="place_number">- №3 -</span>
+    <p class="place_content">ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
+  </div>
+ 	<div class="place_other_item left">
+    <p class="place_head">КРАСИВАЯ ДОРОГА</p>
+    <span class="place_number">- №4 -</span>
+    <p class="place_content">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО</p>
+  </div>
+ 	<div class="place_other_item right">
+  <p class="place_head">МАЛО ТУРИСТОВ</p>
+  <span class="place_number">- №5 -</span>
+  <p class="place_content">БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ</p>
+  </div>
+</div>
+
+  <div class="interested"><h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2><p>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ<br>И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
+  
+
+<div class="hotel">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</div>
+<div class="find_hotel">
+	<form name="find_hotel" method="POST" action="">
+		<label for="date_in_id">ДАТА ЗАЕЗДА:</label><input type="datetime" name="date_in" id="date_in_id">
+		<label fro="date_out_id">ДАТА ВЫЕЗДА:</label><input type="datetime" name="date_out" id="date_out_id">
+        <div class="people">
+        	<label>ВЗРОСЛЫЕ
+        	 <div class="minus"></div>
+        	 <input type="text" name="count_adults">
+        	 <div class="plus"></div>
+          </label>
+          <label>ДЕТИ
+        	 <div class="minus"></div>
+        	 <input type="text" name="count_childs">
+        	 <div class="plus"></div>
+          </label> 
+        <input type="submit" value="НАЙТИ">
+	</form>
+  </div>
+</div>
+<div class="map"></div>
+</main>
+
+
+<footer class="main_footer">
+
+	<div class="visitsedona">#VISITSEDONA</div>
+
+	<section class="footer_social">
+		<a class="social_btn social_btn_tw"  href="#"><Твиттер</a>
+    <a class="social_btn social_btn_fb"  href="#">Фейсбук</a>
+    <a class="social_btn social_btn_bnst"  href="#">Инстаграмм</a>
+	</section>
+
+	<div class="logo_htmlacademy">
+    <span>WEBSITE BY</span><a class="btn" href="https://htmlacademyru">HTML Academy</a> 
+  </div>
+  
+</footer>
+
+</div>
 </body>
 </html>
